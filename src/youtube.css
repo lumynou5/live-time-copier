@@ -1,0 +1,8 @@
+.ytp-time-current {
+  display: inline !important;
+  cursor: pointer;
+}
+
+.ytp-live-badge {
+  margin-left: 5px;
+}

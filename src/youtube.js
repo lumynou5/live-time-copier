@@ -1,0 +1,1 @@
+getElm('.ytp-time-current');
