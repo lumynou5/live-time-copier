@@ -3,6 +3,8 @@
   "name": "Live Time Copier",
   "version": "1.0.0",
   "description": "Copy current live time easily by clicking.",
+  "author": "Lumynous",
+  "homepage_url": "https://github.com/lumynou5/live-time-copier",
   "permissions": [
     "clipboardWrite",
     "storage"
