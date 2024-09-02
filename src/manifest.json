@@ -2,9 +2,10 @@
   "manifest_version": 3,
   "name": "Live Time Copier",
   "version": "1.0.0",
-  "description": "Copy current live time easily by clicking.",
+  "description": "__MSG_extensionDescription__",
   "author": "Lumynous",
   "homepage_url": "https://github.com/lumynou5/live-time-copier",
+  "default_locale": "en",
   "permissions": [
     "clipboardWrite",
     "storage"

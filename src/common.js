@@ -1,7 +1,7 @@
 const callback = (elm) => {
   elm.addEventListener('click', async () => {
     let text = elm.textContent;
-    if ((await chrome.storage.sync.get()).escapeColon)
+    if ((await chrome.storage.sync.get()).escapeColons)
       text = text.replaceAll(':', '\\:');
     await navigator.clipboard.writeText(text);
   });
