@@ -30,9 +30,9 @@ jobs:
             -H "Accept: application/vnd.github+json" \
             -H "Authorization: Bearer ${GITHUB_TOKEN}" \
             -H "Content-Type: application/zip" \
-            -H "Content-Length: $(wc -c dist/live-time-copier.zip)" \
+            -H "Content-Length: $(wc -c <dist/live-time-copier.zip)" \
             -T dist/live-time-copier.zip \
-            "${UPLOAD_URL}?name=live-time-copier.zip"
+            "${UPLOAD_URL%{*}?name=live-time-copier.zip"
         env:
           GITHUB_TOKEN: ${{github.token}}
           UPLOAD_URL: ${{steps.release.outputs.upload-url}}
