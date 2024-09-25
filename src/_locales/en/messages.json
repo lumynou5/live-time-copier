@@ -1,0 +1,11 @@
+{
+  "extensionDescription": {
+    "message": "Copy current live time easily by clicking."
+  },
+  "settingsEscapeColons": {
+    "message": "Escape colons?"
+  },
+  "settingsSave": {
+    "message": "Save"
+  }
+}

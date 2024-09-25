@@ -1,0 +1,38 @@
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Release
+        id: release
+        uses: lumynou5/github-release-action@v1
+        with:
+          token: ${{github.token}}
+
+      - name: Build
+        run: |
+          make
+
+      - name: Upload assets
+        run: |
+          curl -L \
+            -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${GITHUB_TOKEN}" \
+            -H "Content-Type: application/zip" \
+            -H "Content-Length: $(wc -c <dist/live-time-copier.zip)" \
+            -T dist/live-time-copier.zip \
+            "${UPLOAD_URL%{*}?name=live-time-copier.zip"
+        env:
+          GITHUB_TOKEN: ${{github.token}}
+          UPLOAD_URL: ${{steps.release.outputs.upload-url}}

@@ -1,10 +1,8 @@
-DIST_DIR ?= dist
-
-${DIST_DIR}/live-time-copier.xpi: src | dist
-	cd src/ && zip -FSr ../${DIST_DIR}/live-time-copier.xpi *
+dist/live-time-copier.zip: src | dist
+	cd src/ && zip -FSr ../dist/live-time-copier.zip *
 
 dist:
-	mkdir ${DIST_DIR}
+	mkdir dist
 
 clean:
-	rm -fr ${DIST_DIR}
+	rm -fr dist/
