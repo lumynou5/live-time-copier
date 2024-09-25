@@ -1,8 +1,8 @@
-dist/live-time-copier.xpi: src | dist
-	cd src/ && zip -FSr ../dist/live-time-copier.xpi *
+dist/live-time-copier.zip: src | dist
+	cd src/ && zip -FSr ../dist/live-time-copier.zip *
 
 dist:
 	mkdir dist
 
 clean:
-	rm -fr dist
+	rm -fr dist/
