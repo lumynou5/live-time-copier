@@ -1,12 +1,14 @@
 document.getElementById('escape-colons-label').textContent = chrome.i18n.getMessage('settingsEscapeColons');
-document.getElementById('save').value = chrome.i18n.getMessage('settingsSave');
 
-const escapeColons = (await chrome.storage.sync.get()).escapeColons ?? false;
-document.getElementById('escape-colons').checked = escapeColons;
+const initialValue = {
+  escapeColons: false,
+  ...(await chrome.storage.sync.get()),
+};
 
-document.getElementById('save').addEventListener('click', async (event) => {
-  event.preventDefault();
+const escapeColons = document.getElementById('escape-colons');
+escapeColons.checked = initialValue.escapeColons;
+escapeColons.addEventListener('change', async (event) => {
   await chrome.storage.sync.set({
-    escapeColons: document.getElementById('escape-colons').checked,
+    escapeColons: event.target.checked,
   });
 });

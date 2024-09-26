@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [Unreleased]
+### Changed
+- Remove the save button in the option UI; change to preference is now auto-saved.
+
 ## [1.1.0] - 2024-09-25
 ### Added
 - Support Chrome.
