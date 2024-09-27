@@ -1,7 +1,17 @@
+const config = {
+  escapeColons: false,
+};
+(async () => Object.assign(config, await chrome.storage.sync.get()))();
+chrome.storage.sync.onChanged.addListener((changes) => {
+  for (const key in changes) {
+    config[key] = changes[key].newValue;
+  }
+});
+
 const callback = (elm) => {
   elm.addEventListener('click', async () => {
     let text = elm.textContent;
-    if ((await chrome.storage.sync.get()).escapeColons)
+    if (config.escapeColons)
       text = text.replaceAll(':', '\\:');
     await navigator.clipboard.writeText(text);
   });
