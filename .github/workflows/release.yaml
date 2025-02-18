@@ -36,3 +36,21 @@ jobs:
         env:
           GITHUB_TOKEN: ${{github.token}}
           UPLOAD_URL: ${{steps.release.outputs.upload-url}}
+
+      - name: Upload to CWS
+        uses: browser-actions/release-chrome-extension@v0.2.1
+        with:
+          extension-path: dist/live-time-copier.zip
+          extension-id: gmamkocjpjlmbmonbbddgddhkclbchei
+          oauth-client-id: ${{secrets.OAUTH_CLIENT_ID}}
+          oauth-client-secret: ${{secrets.OAUTH_CLIENT_SECRET}}
+          oauth-refresh-token: ${{secrets.OAUTH_REFRESH_TOKEN}}
+
+      - name: Upload to AMO
+        uses: browser-actions/release-firefox-addon@v0.2.1
+        with:
+          addon-path: dist/live-time-copier.zip
+          addon-id: F11091D0-F375-4943-B5BE-0E65A5416E16
+          release-note: ${{steps.release.outputs.change}}
+          auth-api-issuer: ${{secrets.FIREFOX_API_ISSUER}}
+          auth-api-secret: ${{secrets.FIREFOX_API_SECRET}}

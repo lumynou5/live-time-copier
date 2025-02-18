@@ -1,4 +1,4 @@
-dist/live-time-copier.zip: src | dist
+dist/live-time-copier.zip: $(wildcard src/**/*) | dist
 	cd src/ && zip -FSr ../dist/live-time-copier.zip *
 
 dist:
