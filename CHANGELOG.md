@@ -2,6 +2,8 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+### Added
+- Option UI supports dark theme now, selected by browser settings.
 ### Fixed
 - Copying on Twitch results unwanted additional text.
 ### Changed
