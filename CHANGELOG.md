@@ -2,6 +2,8 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+### Fixed
+- Copying on Twitch results unwanted additional text.
 ### Changed
 - Remove the save button in the option UI; change to preference is now auto-saved.
 - Avoid getting configuration each time user copies timestamp.

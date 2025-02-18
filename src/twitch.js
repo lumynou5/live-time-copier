@@ -1,1 +1,1 @@
-getElmContinuous('.live-time');
+getElmContinuous('.live-time span');
