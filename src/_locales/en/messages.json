@@ -2,7 +2,7 @@
   "extensionDescription": {
     "message": "Copy current live time easily by clicking."
   },
-  "settingsEscapeColons": {
+  "settings.escape-colons.label": {
     "message": "Escape colons?"
   }
 }

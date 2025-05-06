@@ -2,7 +2,7 @@
   "extensionDescription": {
     "message": "點一下輕鬆複製直播目前的時間。"
   },
-  "settingsEscapeColons": {
+  "settings.escape-colons.label": {
     "message": "跳脫冒號？"
   }
 }

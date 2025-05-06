@@ -1,4 +1,6 @@
-document.getElementById('escape-colons-label').textContent = chrome.i18n.getMessage('settingsEscapeColons');
+for (const elm of document.querySelectorAll('[data-i18n]')) {
+  elm.textContent = chrome.i18n.getMessage(elm.dataset.i18n);
+}
 
 const initialValue = {
   escapeColons: false,
