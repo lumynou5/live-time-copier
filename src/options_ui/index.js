@@ -18,3 +18,8 @@ function initOptionElm(id, prop) {
 
 initOptionElm('escape-colons', 'checked');
 initOptionElm('pad-zero', 'value');
+
+const reset = document.getElementById('reset');
+reset.addEventListener('click', () => {
+  chrome.storage.sync.clear();
+});

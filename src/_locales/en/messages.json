@@ -19,5 +19,8 @@
   },
   "settings.pad-zero.hour-2d": {
     "message": "Always have hour with 2 digits"
+  },
+  "settings.reset": {
+    "message": "Reset"
   }
 }

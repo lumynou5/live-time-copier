@@ -19,5 +19,8 @@
   },
   "settings.pad-zero.hour-2d": {
     "message": "始終加上兩位數的小時"
+  },
+  "settings.reset": {
+    "message": "重設"
   }
 }
