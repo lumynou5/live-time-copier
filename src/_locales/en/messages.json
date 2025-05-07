@@ -4,5 +4,20 @@
   },
   "settings.escape-colons.label": {
     "message": "Escape colons?"
+  },
+  "settings.pad-zero.label": {
+    "message": "Pad zero?"
+  },
+  "settings.pad-zero.noop": {
+    "message": "Keep original"
+  },
+  "settings.pad-zero.keep-2d": {
+    "message": "Pad each unit to 2 digits"
+  },
+  "settings.pad-zero.hour-1d": {
+    "message": "Always have hour"
+  },
+  "settings.pad-zero.hour-2d": {
+    "message": "Always have hour with 2 digits"
   }
 }
