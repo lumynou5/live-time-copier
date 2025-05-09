@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 - A new option is added to pad zero for timestamps copied.
 - A reset button is added to the option UI.
+- Support recent broadcasts on Twitch.
 
 ## [1.2.0] - 2025-02-18
 ### Added
