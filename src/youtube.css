@@ -3,6 +3,10 @@
   cursor: pointer;
 }
 
+.ytp-time-contents {
+  display: inline-block;
+}
+
 .ytp-live-badge {
   margin-left: 5px;
 }
