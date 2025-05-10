@@ -13,4 +13,4 @@ mv dist/CHANGELOG.md CHANGELOG.md
 sed '
 s/"version": "[0-9]\+\.[0-9]\+\.[0-9]\+"/"version": "'"$1"'"/
 ' src/manifest.json >dist/manifest.json
-mv dist/manifest.json manifest.json
+mv dist/manifest.json src/manifest.json
