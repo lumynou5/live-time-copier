@@ -1,5 +1,6 @@
 const config = {
-  escapeColons: false,
+  'escape-colons': false,
+  'pad-zero': 'noop',
 };
 (async () => Object.assign(config, await chrome.storage.sync.get()))();
 chrome.storage.sync.onChanged.addListener((changes) => {
@@ -11,8 +12,29 @@ chrome.storage.sync.onChanged.addListener((changes) => {
 const callback = (elm) => {
   elm.addEventListener('click', async () => {
     let text = elm.textContent;
-    if (config.escapeColons)
+
+    switch (config['pad-zero']) {
+      case 'noop':
+        break;
+      case 'keep-2d':
+        text = text.replace(/^(\d:)/, '0$1');
+        break;
+      case 'hour-1d':
+        // Replacement: 0:${1:+$1:0}$2
+        text = text.replace(/^(\d)?(\d:\d+)$/, (_, p1, p2) => `0:${p1 ?? '0'}${p2}`);
+        break;
+      case 'hour-2d':
+        // Replacement: ${1:+${2:+$1:0$1}:00:}${3:+$3:0}$4
+        text = text.replace(
+          /^((\d)?\d:)?(\d)?(\d:\d+)$/,
+          (_, p1, p2, p3, p4) => `${p1 ? p2 ? p1 : `0${p1}` : '00:'}${p3 ?? '0'}${p4}`
+        );
+        break;
+    }
+
+    if (config['escape-colons'])
       text = text.replaceAll(':', '\\:');
+
     await navigator.clipboard.writeText(text);
   });
 };

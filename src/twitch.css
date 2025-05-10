@@ -1,3 +1,4 @@
-.live-time {
+.live-time,
+[data-a-target="player-seekbar-current-time"] {
   cursor: pointer;
 }
