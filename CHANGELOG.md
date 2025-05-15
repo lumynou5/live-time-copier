@@ -2,6 +2,8 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+### Fixed
+- Locale string keys consisting with dash (`-`) don't work in Chrome.
 
 ## [1.3.0] - 2025-05-10
 ### Added
