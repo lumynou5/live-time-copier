@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.3.1] - 2025-05-15
+### Fixed
+- Locale string keys consisting with dash (`-`) don't work in Chrome.
+
 ## [1.3.0] - 2025-05-10
 ### Added
 - A new option is added to pad zero for timestamps copied.
@@ -27,6 +31,7 @@ All notable changes to this project will be documented in this file.
 - Add zh-TW translation.
 - Add icons.
 
+[1.3.1]: https://github.com/lumynou5/live-time-copier/releases/tag/v1.3.1
 [1.3.0]: https://github.com/lumynou5/live-time-copier/releases/tag/v1.3.0
 [1.2.0]: https://github.com/lumynou5/live-time-copier/releases/tag/v1.2.0
 [1.1.0]: https://github.com/lumynou5/live-time-copier/releases/tag/v1.1.0
