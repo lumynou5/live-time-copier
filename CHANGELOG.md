@@ -2,6 +2,9 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+### Added
+- Disable current/remaining time switch on YouTube.  It makes time copying hard
+  to use.
 
 ## [1.3.1] - 2025-05-15
 ### Fixed
