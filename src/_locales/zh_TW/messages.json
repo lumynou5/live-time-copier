@@ -3,7 +3,7 @@
     "message": "點一下輕鬆複製直播目前的時間。"
   },
   "settings.escape_colons.label": {
-    "message": "跳脫冒號？"
+    "message": "轉義冒號？"
   },
   "settings.pad_zero.label": {
     "message": "補零？"
