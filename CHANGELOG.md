@@ -2,6 +2,8 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+
+## [1.3.2] - 2025-10-30
 ### Added
 - Disable current/remaining time switch on YouTube.  It makes time copying hard
   to use.
@@ -36,6 +38,7 @@ All notable changes to this project will be documented in this file.
 - Add zh-TW translation.
 - Add icons.
 
+[1.3.2]: https://github.com/lumynou5/live-time-copier/releases/tag/v1.3.2
 [1.3.1]: https://github.com/lumynou5/live-time-copier/releases/tag/v1.3.1
 [1.3.0]: https://github.com/lumynou5/live-time-copier/releases/tag/v1.3.0
 [1.2.0]: https://github.com/lumynou5/live-time-copier/releases/tag/v1.2.0
