@@ -11,33 +11,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Release
-        id: release
-        uses: lumynou5/github-release-action@v1
-        with:
-          token: ${{github.token}}
-          major-tag-template: ''
-          minor-tag-template: ''
+        uses: actions/checkout@v5
 
       - name: Build
         run: |
           make
 
-      - name: Upload assets
-        run: |
-          curl -L \
-            -X POST \
-            -H "Accept: application/vnd.github+json" \
-            -H "Authorization: Bearer ${GITHUB_TOKEN}" \
-            -H "Content-Type: application/zip" \
-            -H "Content-Length: $(wc -c <dist/live-time-copier.zip)" \
-            -T dist/live-time-copier.zip \
-            "${UPLOAD_URL%{*}?name=live-time-copier.zip"
-        env:
-          GITHUB_TOKEN: ${{github.token}}
-          UPLOAD_URL: ${{steps.release.outputs.upload-url}}
+      - name: Release
+        id: release
+        uses: lumynou5/github-release-action@v2
+        with:
+          token: ${{github.token}}
+          major-tag-template: ''
+          minor-tag-template: ''
+          assets: |
+            dist/live-time-copier.zip
 
       - name: Upload to CWS
         uses: browser-actions/release-chrome-extension@v0.2.1
