@@ -4,7 +4,12 @@
 }
 
 .ytp-time-contents {
-  display: inline-block;
+  display: inline !important;
+}
+
+.ytp-live .ytp-time-separator,
+.ytp-live .ytp-time-duration {
+  display: none;
 }
 
 .ytp-live-badge {

@@ -2,6 +2,8 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+### Fixed
+- Fixed YouTube break.
 
 ## [1.3.2] - 2025-10-30
 ### Added
