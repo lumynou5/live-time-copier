@@ -38,7 +38,7 @@ function timeCopier(elm) {
 }
 
 function addTimeCopier(elm) {
-  elm.addEventListener('click', timeCopier);
+  elm.addEventListener('click', () => timeCopier(elm));
 };
 
 function getElm(selector, callback) {
