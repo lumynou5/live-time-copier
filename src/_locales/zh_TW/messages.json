@@ -2,25 +2,25 @@
   "extensionDescription": {
     "message": "點一下輕鬆複製直播目前的時間。"
   },
-  "settings.escape_colons.label": {
+  "settings@escape_colons@label": {
     "message": "轉義冒號？"
   },
-  "settings.pad_zero.label": {
+  "settings@pad_zero@label": {
     "message": "補零？"
   },
-  "settings.pad_zero.noop": {
+  "settings@pad_zero@noop": {
     "message": "維持原樣"
   },
-  "settings.pad_zero.keep_2d": {
+  "settings@pad_zero@keep_2d": {
     "message": "將每個單位各補到兩位數"
   },
-  "settings.pad_zero.hour_1d": {
+  "settings@pad_zero@hour_1d": {
     "message": "始終加上小時"
   },
-  "settings.pad_zero.hour_2d": {
+  "settings@pad_zero@hour_2d": {
     "message": "始終加上兩位數的小時"
   },
-  "settings.reset": {
+  "settings@reset": {
     "message": "重設"
   }
 }

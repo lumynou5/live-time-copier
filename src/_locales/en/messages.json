@@ -2,25 +2,25 @@
   "extensionDescription": {
     "message": "Copy current live time easily by clicking."
   },
-  "settings.escape_colons.label": {
+  "settings@escape_colons@label": {
     "message": "Escape colons?"
   },
-  "settings.pad_zero.label": {
+  "settings@pad_zero@label": {
     "message": "Pad zero?"
   },
-  "settings.pad_zero.noop": {
+  "settings@pad_zero@noop": {
     "message": "Keep original"
   },
-  "settings.pad_zero.keep_2d": {
+  "settings@pad_zero@keep_2d": {
     "message": "Pad each unit to 2 digits"
   },
-  "settings.pad_zero.hour_1d": {
+  "settings@pad_zero@hour_1d": {
     "message": "Always have hour"
   },
-  "settings.pad_zero.hour_2d": {
+  "settings@pad_zero@hour_2d": {
     "message": "Always have hour with 2 digits"
   },
-  "settings.reset": {
+  "settings@reset": {
     "message": "Reset"
   }
 }
