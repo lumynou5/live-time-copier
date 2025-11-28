@@ -2,6 +2,8 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+
+## [1.3.3] - 2025-11-28
 ### Fixed
 - Fixed YouTube break.
 - Fixed "undefined" copied on Twitch.
@@ -41,6 +43,7 @@ All notable changes to this project will be documented in this file.
 - Add zh-TW translation.
 - Add icons.
 
+[1.3.3]: https://github.com/lumynou5/live-time-copier/releases/tag/v1.3.3
 [1.3.2]: https://github.com/lumynou5/live-time-copier/releases/tag/v1.3.2
 [1.3.1]: https://github.com/lumynou5/live-time-copier/releases/tag/v1.3.1
 [1.3.0]: https://github.com/lumynou5/live-time-copier/releases/tag/v1.3.0
